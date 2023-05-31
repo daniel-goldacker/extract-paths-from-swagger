@@ -1,0 +1,1 @@
+# extract-paths-from-swagger
