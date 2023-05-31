@@ -1,11 +1,7 @@
-from swagger import extractPathsFromSwagger
+from config import ConfigFiles
+from swagger import Swagger
 
-swaggerFile = './src/swagger-file/openapi.json'
-pathFile = "./src/paths-file/paths.txt"
-
-paths = extractPathsFromSwagger(swaggerFile)
-
-with open(pathFile, "w") as arquivo:
+with open(ConfigFiles.PATH_FILE, "w") as arquivo:
     arquivo.writelines("Paths in Swagger file:" + '\n')
-    for path in paths:
+    for path in Swagger.extractPathsFromSwagger(ConfigFiles.SWAGGER_FILE):
         arquivo.writelines(path + '\n')
