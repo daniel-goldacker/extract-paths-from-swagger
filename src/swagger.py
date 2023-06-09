@@ -1,13 +1,17 @@
 import yaml
 
 class Swagger:
-
-    def extractPathsFromSwagger(swaggerFileExtract):
+    def extractInfosFromSwagger(swaggerFileExtract):
         with open(swaggerFileExtract, 'r') as file:
             try:
                 swaggerData = yaml.safe_load(file)
                 paths = swaggerData.get('paths', {})
 
-                return list(paths.keys())
+                infosExtractSwagger = []
+                for path, methods in paths.items():
+                    for method in methods.keys():
+                        infosExtractSwagger.append((path, method))
+
+                return infosExtractSwagger
             except yaml.YAMLError as e:
                 print("Error loading swagger file:", e)

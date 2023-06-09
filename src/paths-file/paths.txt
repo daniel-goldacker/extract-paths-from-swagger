@@ -1,14 +1,20 @@
-Paths in Swagger file:
-/pet
-/pet/findByStatus
-/pet/findByTags
-/pet/{petId}
-/pet/{petId}/uploadImage
-/store/inventory
-/store/order
-/store/order/{orderId}
-/user
-/user/createWithList
-/user/login
-/user/logout
-/user/{username}
+Infos of Swagger file:
+ * [PUT] /pet
+ * [POST] /pet
+ * [GET] /pet/findByStatus
+ * [GET] /pet/findByTags
+ * [GET] /pet/{petId}
+ * [POST] /pet/{petId}
+ * [DELETE] /pet/{petId}
+ * [POST] /pet/{petId}/uploadImage
+ * [GET] /store/inventory
+ * [POST] /store/order
+ * [GET] /store/order/{orderId}
+ * [DELETE] /store/order/{orderId}
+ * [POST] /user
+ * [POST] /user/createWithList
+ * [GET] /user/login
+ * [GET] /user/logout
+ * [GET] /user/{username}
+ * [PUT] /user/{username}
+ * [DELETE] /user/{username}
