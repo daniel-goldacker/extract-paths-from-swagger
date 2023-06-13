@@ -1,4 +1,11 @@
-Infos of Swagger file:
+Statistics for Swagger file:
+ * GET: 8
+ * POST: 6
+ * PUT: 2
+ * PATCH: 0
+ * DELETE: 3
+
+Paths for Swagger file:
  * [PUT] /pet
  * [POST] /pet
  * [GET] /pet/findByStatus
@@ -18,3 +25,5 @@ Infos of Swagger file:
  * [GET] /user/{username}
  * [PUT] /user/{username}
  * [DELETE] /user/{username}
+
+Total Endpoints: 19
